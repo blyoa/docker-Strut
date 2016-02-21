@@ -1,4 +1,4 @@
-FROM node:4.1.0-slim
+FROM node:4.3.1-slim
 ENV REFRESHED_AT 2016_02_20
 
 RUN wget https://github.com/tantaman/Strut/archive/master.tar.gz -O ./Strut.tar.gz \
