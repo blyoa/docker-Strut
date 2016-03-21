@@ -1,5 +1,5 @@
 FROM node:4.3.1-slim
-ENV REFRESHED_AT 2016_02_20
+ENV REFRESHED_AT 2016_03_21
 
 RUN wget https://github.com/tantaman/Strut/archive/master.tar.gz -O ./Strut.tar.gz \
  && tar zxvf ./Strut.tar.gz \
