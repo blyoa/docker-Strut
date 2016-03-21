@@ -1,9 +1,10 @@
 FROM node:4.3.1-slim
 ENV REFRESHED_AT 2016_03_21
 
-RUN wget https://github.com/tantaman/Strut/archive/v0.3.2.tar.gz -O ./Strut.tar.gz \
+RUN wget https://github.com/tantaman/Strut/archive/v0.6.3.tar.gz -O ./Strut.tar.gz \
  && tar zxvf ./Strut.tar.gz \
- && mv Strut-0.3.2 Strut \
+ && mv Strut-0.6.3 Strut \
+ && sed -i -e "s/\s*\"grunt-bower-hooks\":.*,//" Strut/package.json \
  && rm ./Strut.tar.gz
 
 WORKDIR ./Strut
